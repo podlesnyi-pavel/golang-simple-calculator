@@ -90,13 +90,9 @@ func calculator() {
 	isArabicNumbers := arabicNumbersCount == 2
 	isRomanNumerals := romanNumeralsCount == 2
 
-	fmt.Printf("romanNumeralsCount %d arabicNumbersCount %d\n", romanNumeralsCount, arabicNumbersCount)
-
 	if !isArabicNumbers && !isRomanNumerals {
 		customPanic("")
 	}
-
-	fmt.Printf("Type: %T Value: %#v\n", operands, operands)
 
 	var (
 		firstOperand  int
